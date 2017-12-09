@@ -8,11 +8,17 @@
         <script language="javascript" type="text/javascript">
             var c = 0;
             function answer(p) {
-                if (p == 0 && c < 10) {
+                if (p == 0 && c < 5) {
                     c++;
-                    document.getElementById("ans").innerHTML="江宝莹系大傻逼";
+                    var a = prompt("你真系觉得我系大傻逼？");
+                    if (a) {
+                        document.getElementById("ans").innerHTML="江宝莹先系大傻逼";
+                    }
+                    else {}
+                        document.getElementById("ans").innerHTML="江宝莹系大傻逼";
+                    }
                 }
-                else if (p == 1 && c < 10) {
+                else if (p == 1 && c < 5) {
                     c++;
                     document.getElementById("ans").innerHTML="江宝莹当然系大傻逼啦"; 
                 }
