@@ -1,4 +1,4 @@
-# https://lengzhang.github.io/myweb/
+# https://lengzhang.me
 
 This is personal webside for Leng Zhang.
 
