@@ -11,6 +11,7 @@
         <title>Leng Page</title>
 
         <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <script src="assets/js/main.js"></script>
     </head>
     <body>
         <div class="container">
@@ -32,8 +33,8 @@
                         <p class="author_description">Computer Science BS student in University of California, Riverside</p>
                     </div>
                     <div class="author_urls_wrap">
-                        <button class="but_follow">Follow</button>
-                        <ul class="author_urls">
+                        <button id="follow_btn" type="button" onclick="follow_clicked()">Follow</button>
+                        <ul id="follow_list" class="author_urls">
                             <li class="author_location">
                                 Arcadia, California
                             </li>
@@ -53,27 +54,32 @@
                 <div class="main_page">
                     <div class="page">
                         <header>
-                            <h1 class="page_title" itemprop="headline">About Me</h1>
-                            <section class="page_content" itemprop="text">
-                                <p>
-                                    I am Leng Zhang, Computer Science BS student in University of California, Riverside. I am currently looking for an internship or full time job. My CV is <a href="files/LengZhang_Resume.pdf">here</a>.
-                                </p>
-                            </section>
+                            <h2 class="page_title" itemprop="headline">About Me</h1>
                         </header>
+                        <section class="page_content" itemprop="text">
+                            <p>
+                                I am Leng Zhang, Computer Science BS student in University of California, Riverside. I am currently looking for an internship or full time job. My CV is <a href="files/LengZhang_Resume.pdf">here</a>.
+                            </p>
+                        </section>
                     </div>
                     <div class="page">
                         <header>
-                            <h1 class="page_title" itemprop="headline">Education</h1>
-                            <section class="page_content" itemprop="text">
-                                <p>
-                                    I am Leng Zhang, Computer Science BS student in University of California, Riverside. I am currently looking for an internship or full time job. My CV is <a href="files/LengZhang_Resume.pdf">here</a>.
-                                </p>
-                            </section>
+                            <h2 class="page_title" itemprop="headline">Education</h1>
                         </header>
+                        <section class="page_content" itemprop="text">
+                            <div>
+                                <span style="float: left">University of California at Riverside</span>
+                                <span style="float: right;">March 2018</span>
+                            </div>
+                            <p><strong>Bachelor of Science, Computer Science</strong></p>
+                        </section>
                     </div>
                 </div>
             </div>
-            <footer>footer</footer>
+            <footer>
+                <button onclick="print">click me</button>
+
+            </footer>
         </div>
     </body>
 </html>
