@@ -1,31 +1,79 @@
-
 <!DOCTYPE html>
 <html>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <head>
-        <meta name="author" content="Leng Zhang">
-        <meta name="description" content="Personal Webside">
+        <meta charset="UTF-8"/>
+        <meta name="title" content="Leng Page"/>
+        <meta name="author" content="Leng Zhang"/>
+        <meta name="description" content="This page is about Leng Zhang."/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <meta charset="UTF-8">
-        <title>Leng's First Page</title>
-        <base href="https://lengzhang.github.io/myweb/">
-        <script language="javascript" type="text/javascript">
-            function myfunc(a) {
-                if (a == 0) {
-                    document.getElementById("reply").innerHTML="Hi Hi";
-                    alert("HI HI");
-                }
-                else if (a == 1) {
-                    document.getElementById("reply").innerHTML="You know me now.";
-                }
-            }
-        </script>
+        <title>Leng Page</title>
+
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     </head>
     <body>
-            <h1>Welcome to Leng's Page</h1>
-            <p>Do you know me?</p>
-            <p id="reply"><br></p>
-            <button type="button" onclick="myfunc(0)">Yes</button>
-            <button type="button" onclick="myfunc(1)">No</button>
+        <div class="container">
+            <div class="head_container">
+                <div class="nav_container">
+                    <nav>
+                        <a href="index.html">Leng Zhang</a>
+                        <a href="#">CV</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="main_container">
+                <div class="author_sidebar">
+                    <div class="author_avatar">
+                        <img src="images/profile.png" alt="Leng Zhang">
+                    </div>
+                    <div class="author_content">
+                        <h3 class="author_name">Leng Zhang</h4>
+                        <p class="author_description">Computer Science BS student in University of California, Riverside</p>
+                    </div>
+                    <div class="author_urls_wrap">
+                        <button class="but_follow">Follow</button>
+                        <ul class="author_urls">
+                            <li class="author_location">
+                                Arcadia, California
+                            </li>
+                            <li class="author_linkedin">
+                                <a href="https://www.linkedin.com/in/lengzhang/">
+                                    Linkedin
+                                </a>
+                            </li>
+                            <li class="author_github">
+                                <a href="https://github.com/lengzhang">
+                                    GitHub
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main_page">
+                    <div class="page">
+                        <header>
+                            <h1 class="page_title" itemprop="headline">About Me</h1>
+                            <section class="page_content" itemprop="text">
+                                <p>
+                                    I am Leng Zhang, Computer Science BS student in University of California, Riverside. I am currently looking for an internship or full time job. My CV is <a href="files/LengZhang_Resume.pdf">here</a>.
+                                </p>
+                            </section>
+                        </header>
+                    </div>
+                    <div class="page">
+                        <header>
+                            <h1 class="page_title" itemprop="headline">Education</h1>
+                            <section class="page_content" itemprop="text">
+                                <p>
+                                    I am Leng Zhang, Computer Science BS student in University of California, Riverside. I am currently looking for an internship or full time job. My CV is <a href="files/LengZhang_Resume.pdf">here</a>.
+                                </p>
+                            </section>
+                        </header>
+                    </div>
+                </div>
+            </div>
+            <footer>footer</footer>
+        </div>
     </body>
 </html>
