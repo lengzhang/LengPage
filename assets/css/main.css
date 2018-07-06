@@ -146,7 +146,7 @@ nav a:hover:before{
         flex-direction: column;
         flex-wrap: nowrap;
         
-        max-width: 25%;
+        max-width: 9em;
         opacity:0.75;
         -webkit-transition:opacity 0.2s ease-in-out;
         transition:opacity 0.2s ease-in-out
@@ -320,4 +320,21 @@ nav a:hover:before{
 .main_page .page {
     
     border-bottom: 1px solid #f3f3f3;
+}
+
+.main_container .page .page_title {
+    font-size: large;
+    margin: 0.5em 0;
+}
+
+.main_page .page ul {
+    padding: 0;
+}
+
+.main_container .page .page_content {
+    padding-left: 1.5em;
+}
+
+.main_container .page .page_content .page_item {
+    padding-left: 0.5em;
 }
