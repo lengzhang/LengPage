@@ -179,8 +179,8 @@ nav a:hover:before{
 }
 
 .author_sidebar .author_content{
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     line-height: 1;
 }
 @media (min-width: 37.5em){
@@ -327,14 +327,24 @@ nav a:hover:before{
     margin: 0.5em 0;
 }
 
-.main_page .page ul {
+.main_page .page .page_content {
+    padding-left: 1.5em;
+    margin: 1em 0;
+}
+
+.main_page .page .page_content hr {
+    border: 1px solid #f3f3f3;
+}
+
+.main_page .page .page_content ul {
     padding: 0;
 }
 
-.main_container .page .page_content {
-    padding-left: 1.5em;
+.main_page .page .page_content .page_item {
+    padding-left: 0.5em;
 }
 
-.main_container .page .page_content .page_item {
-    padding-left: 0.5em;
+.main_page .page .page_content .page_item ul {
+    margin: 0.5em 0;
+    padding-left: 1.5em;
 }
